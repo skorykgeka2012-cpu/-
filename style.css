@@ -1,0 +1,203 @@
+    /* style.css */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  background: linear-gradient(
+    135deg,
+    #1e3c72,
+    #2a5298,
+    #4facfe
+  );
+}
+
+/* ФОН */
+
+.background{
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.35);
+
+  z-index: -1;
+}
+
+/* ШАПКА */
+
+.header{
+  text-align: center;
+
+  padding: 60px 20px;
+}
+
+.header h1{
+  font-size: 55px;
+
+  margin-bottom: 15px;
+
+  text-shadow: 0 0 20px black;
+}
+
+.header p{
+  font-size: 22px;
+
+  color: rgba(255,255,255,0.9);
+}
+
+/* СЕМЬЯ */
+
+.family{
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 30px;
+
+  padding: 40px;
+}
+
+.family-card{
+  width: 260px;
+
+  background: rgba(255,255,255,0.12);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 25px;
+
+  padding: 25px;
+
+  backdrop-filter: blur(8px);
+
+  transition: 0.3s;
+}
+
+.family-card:hover{
+  transform: translateY(-5px);
+
+  background: rgba(255,255,255,0.18);
+}
+
+.family-card h2{
+  margin-bottom: 15px;
+
+  font-size: 28px;
+}
+
+.family-card p{
+  font-size: 18px;
+
+  line-height: 1.5;
+}
+
+/* ПЛАНЫ */
+
+.plans{
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 40px 20px;
+}
+
+.plans-title{
+  text-align: center;
+
+  font-size: 40px;
+
+  margin-bottom: 30px;
+
+  text-shadow: 0 0 15px black;
+}
+
+.plan-card{
+  background: rgba(255,255,255,0.12);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 20px;
+
+  padding: 22px;
+
+  margin-bottom: 20px;
+
+  backdrop-filter: blur(8px);
+
+  transition: 0.3s;
+}
+
+.plan-card:hover{
+  background: rgba(255,255,255,0.18);
+}
+
+.plan-card p{
+  font-size: 22px;
+}
+
+/* FOOTER */
+
+.footer{
+  padding: 50px 20px;
+}
+
+/* TELEGRAM */
+
+.telegram-box{
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  width: fit-content;
+
+  margin: auto;
+
+  background: rgba(255,255,255,0.12);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 20px;
+
+  padding: 15px 25px;
+
+  backdrop-filter: blur(8px);
+}
+
+/* ИКОНКА */
+
+.tg-icon{
+  width: 42px;
+  height: 42px;
+
+  object-fit: contain;
+
+  transition: 0.3s;
+}
+
+.tg-icon:hover{
+  transform: scale(1.1);
+}
+
+/* ТЕКСТ */
+
+.tg-text{
+  font-size: 18px;
+
+  max-width: 320px;
+}
