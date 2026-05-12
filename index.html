@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -16,36 +18,103 @@
   <!-- ШАПКА -->
   <header class="header">
 
-    <h1>НАША СЕМЬЯ CКОРИКИ</h1>
+    <h1>НАША СЕМЬЯ ❤️</h1>
 
     <p>
-      Тут находятся дела семьи, планы и важные события
+      Дела семьи, задания и планы
     </p>
 
   </header>
 
-  <!-- ЧЛЕНЫ СЕМЬИ -->
+  <!-- СЕМЬЯ -->
 
   <section class="family">
 
+    <!-- НАДЯ -->
     <div class="family-card">
-      <h2> Надя</h2>
-      <p>Тут можно писать дела Нади</p>
+
+      <h2>Сестра Надя</h2>
+
+      <textarea id="nadyaInput"
+      placeholder="Например: сделать уроки"></textarea>
+
+      <button onclick="saveTask('nadya')">
+        Сохранить
+      </button>
+
+      <div id="nadyaTasks" class="tasks"></div>
+
     </div>
 
+    <!-- МАМА -->
     <div class="family-card">
-      <h2>Мама</h2>
-      <p>Тут можно писать дела мамы</p>
+
+      <h2>Мама Юля</h2>
+
+      <textarea id="momInput"
+      placeholder="Добавить задание"></textarea>
+
+      <button onclick="saveTask('mom')">
+        Сохранить
+      </button>
+
+      <div id="momTasks" class="tasks"></div>
+
     </div>
 
+    <!-- ПАПА -->
     <div class="family-card">
-      <h2>Папа </h2>
-      <p>Тут можно писать дела папы</p>
+
+      <h2>Папа Сережа</h2>
+
+      <textarea id="dadInput"
+      placeholder="Добавить задание"></textarea>
+
+      <button onclick="saveTask('dad')">
+        Сохранить
+      </button>
+
+      <div id="dadTasks" class="tasks"></div>
+
     </div>
 
+    <!-- ЖЕНЯ -->
     <div class="family-card">
-      <h2>Женя</h2>
-      <p>Тут можно писать свои дела</p>
+
+      <h2>Сын Женя</h2>
+
+      <textarea id="zhenyaInput"
+      placeholder="Добавить задание"></textarea>
+
+      <button onclick="saveTask('zhenya')">
+        Сохранить
+      </button>
+
+      <div id="zhenyaTasks" class="tasks"></div>
+
+    </div>
+
+  </section>
+
+  <!-- ДОСКА ПОЧЕТА -->
+
+  <section class="honor-board">
+
+    <h2 class="board-title">
+      ДОСКА ПОЧЕТА 🏆
+    </h2>
+
+    <div class="board-card">
+
+      <textarea id="honorInput"
+      placeholder="Добавляйте заслуги за неделю"></textarea>
+
+      <button onclick="saveTask('honor')">
+        Добавить
+      </button>
+
+      <div id="honorTasks" class="tasks"></div>
+
     </div>
 
   </section>
@@ -55,7 +124,7 @@
   <section class="plans">
 
     <h2 class="plans-title">
-      Ближайшие планы на лето 
+      Ближайшие планы на лето ☀️
     </h2>
 
     <div class="plan-card">
@@ -78,7 +147,8 @@
 
     <div class="telegram-box">
 
-      <a href="https://t.me/askrubot?start=5836107276" target="_blank">
+      <a href="https://t.me/askrubot?start=5836107276"
+      target="_blank">
 
         <img src="tg.png" class="tg-icon" alt="">
 
@@ -92,6 +162,8 @@
     </div>
 
   </footer>
+
+  <script type="module" src="script.js"></script>
 
 </body>
 </html>
